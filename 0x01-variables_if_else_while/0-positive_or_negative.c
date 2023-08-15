@@ -3,11 +3,12 @@
 #include <stdio.h>
 /**
  * main - Entry point
- *
- * Descripition: 'negative or positive or zero'
- * @n: describe the parameter
- * Return : 0 (success)
-*/
+ * 
+ * Description: 'the program's description'
+ * @parameter: describe the parameter
+ * 
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;

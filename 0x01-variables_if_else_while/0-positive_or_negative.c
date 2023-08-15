@@ -4,8 +4,8 @@
 /**
  * main - Entry point
  *
- * Descripition: negative or positive or zero
- *
+ * Descripition: 'negative or positive or zero'
+ * @n: describe the parameter
  * Return : 0 (success)
 */
 int main(void)

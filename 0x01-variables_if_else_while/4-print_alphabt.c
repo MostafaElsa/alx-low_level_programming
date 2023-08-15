@@ -16,8 +16,10 @@ int main(void)
           if (c != 'q')
             putchar(c++);
           else
+          {
+                  c++;
             continue;
-          }
+          }}
         putchar('\n');
         return(0);
 }

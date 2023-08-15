@@ -12,13 +12,13 @@ int main(void)
 {
         int c = 48;
         while(c <= 57)
-          {
+        {
                 putchar(c++);
-            if(c<=57)
-            {
-              putchar(',');
-              putchar(' ');
-            {
-          }
+                if(c<=57)
+                {
+                        putchar(',');
+                        putchar(' ');
+                }
+        }
         return(0);
 }

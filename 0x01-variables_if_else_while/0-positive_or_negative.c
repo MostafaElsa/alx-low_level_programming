@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/** 
+/**
  * main - Entry point
  * Descripition: negative or positive or zero
- * Return : 0 success 
+ * Return : 0 success
 */
 int main(void)
 {

@@ -1,9 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-/* main - entry*/
-/* check if n is postive or negative*/
+/**
+ * main - Entry point
+ *
+ * Description: false or true vailidation
+ *
+ * Return: 0 (success)
+ */
 int main(void)
 {
         char c = 'a';

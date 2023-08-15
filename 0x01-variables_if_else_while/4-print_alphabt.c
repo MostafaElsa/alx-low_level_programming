@@ -17,7 +17,7 @@ int main(void)
             putchar(c++);
           else
           {
-        c++;
+            c++;
             continue;
           }
         }

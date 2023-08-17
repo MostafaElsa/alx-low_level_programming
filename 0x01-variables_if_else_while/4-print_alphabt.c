@@ -10,17 +10,17 @@
  */
 int main(void)
 {
-        char c = 'a';
-        while(c <= 'z')
-        {
-          if (c != 'q' && c != 'e')
-            putchar(c++);
-          else
-          {
-            c++;
-            continue;
-          }
-        }
-        putchar('\n');
-        return(0);
+	char c = 'a';
+	while(c <= 'z')
+	{
+		if (c != 'q' && c != 'e')
+			putchar(c++);
+		else
+		{
+			c++;
+			continue;
+		}
+	}
+	putchar('\n');
+	return (0);
 }

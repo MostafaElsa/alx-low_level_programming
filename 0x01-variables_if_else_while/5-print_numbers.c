@@ -10,9 +10,9 @@
  */
 int main(void)
 {
-        int c = 0;
-        while(c <= 9)
-                printf("%d", c++);
-        putchar('\n');
-        return(0);
+	int c = 0;
+	while(c <= 9)
+		printf("%d", c++);
+	putchar('\n');
+	return (0);
 }

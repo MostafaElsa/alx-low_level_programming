@@ -9,13 +9,13 @@
  * Return: 1 (upper) 0 (lower)
 */
 
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 	if (n <= 0)
 		putchar('\n');
 	else
 	{
-		for (int i = 0 : i < n ; i++)
+		for (int i = 0 ; i < n ; i++)
 		{
 			for (int j = 0 ; j < i ; j++)
 			{

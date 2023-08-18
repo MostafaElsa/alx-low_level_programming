@@ -11,7 +11,7 @@
 
 void print_most_numbers(void)
 {
-	for (int i = 0 : i < 10 ; i++)
+	for (int i = 0 ; i < 10 ; i++)
 	{
 		for (char j = 48 ; j < 63 ; j++)
 		{

@@ -2,28 +2,26 @@
 #include "main.h"
 
 /**
- * print_diagonal - Function
- * @n: int
+ * main - Entry point
+ *
  * Description: whether char is upper or lower case
  *
  * Return: 1 (upper) 0 (lower)
 */
 
-void print_diagonal(int n);
+int main(void)
 {
-	if (n <= 0)
-		putchar('\n');
-	else
+	for (int i = 1 ; i <= 100 ; i++)
 	{
-		for (int i = 0 : i < n ; i++)
-		{
-			for (int j = 0 ; j < i ; j++)
-			{
-				putchar(' ');
-			}
-			putchar('\\');
-			putchar('\n');
-		}
-		putchar('\n');
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Buzz");
+		else
+			printf(i);
+
 	}
+	putchar('\n');
 }

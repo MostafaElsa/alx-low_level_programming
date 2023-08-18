@@ -31,7 +31,8 @@ void times_table(void)
 				}
 				else
 				{
-					int y = x / 10, z = y % 10;
+					int y = x / 10, z = x % 10;
+
 					_putchar(',');
 					_putchar(' ');
 					_putchar('0' + y);

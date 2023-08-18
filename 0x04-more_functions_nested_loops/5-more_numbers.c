@@ -17,16 +17,16 @@ void more_numbers(void)
 	{
 		int j;
 
-		for (j = 48 ; j < 63 ; j++)
+		for (j = 0 ; j <= 14 ; j++)
 		{
-			if (j < 58)
-				_putchar(j);
+			if (j < 10)
+				_putchar('0' + j);
 			else
 			{
 				int x = j / 10, y = j % 10;
 
-				_putchar(x);
-				_putchar(y);
+				_putchar('0' + x);
+				_putchar('0' + y);
 			}
 		}
 		_putchar('\n');

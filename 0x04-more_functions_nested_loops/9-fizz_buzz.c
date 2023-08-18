@@ -25,5 +25,5 @@ int main(void)
 			printf(i);
 
 	}
-	putchar('\n');
+	_putchar('\n');
 }

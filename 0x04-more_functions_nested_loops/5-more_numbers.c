@@ -19,8 +19,8 @@ void print_most_numbers(void)
 
 		for (j = 48 ; j < 63 ; j++)
 		{
-			putchar(j);
+			_putchar(j);
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }

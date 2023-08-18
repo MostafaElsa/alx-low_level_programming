@@ -2,14 +2,14 @@
 #include "main.h"
 
 /**
- * print_most_numbers - Function
+ * more_numbers - Function
  *
  * Description: whether char is upper or lower case
  *
  * Return: 1 (upper) 0 (lower)
 */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
 	int i;
 

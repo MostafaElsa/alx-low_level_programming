@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - Function
  *
  * Description: print putchar
  *
  * Return: On success 1.
  * On error, -1 is returned, and error is set appropriately.
 */
-int main(void)
+void print_alphabet(void)
 {
 	int i;
 

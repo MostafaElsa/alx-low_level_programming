@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * _isupper - Function
+ * _isdigit - Function
  *
  * @c: char
- * Description: whether char is digit or not 
+ * Description: whether char is digit or not
  *
  * Return: 1 (digit) 0 (not)
 */
 int _isdigit(int c)
 {
-        if (c >= 48 && c <= 57)
-                return (1);
-        else
-                return (0);
+	if (c >= 48 && c <= 57)
+		return (1);
+	else
+		return (0);
 }

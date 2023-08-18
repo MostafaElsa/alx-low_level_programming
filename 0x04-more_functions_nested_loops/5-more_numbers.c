@@ -19,7 +19,14 @@ void more_numbers(void)
 
 		for (j = 48 ; j < 63 ; j++)
 		{
-			_putchar(j);
+			if (j < 58)
+				_putchar(j);
+			else
+			{
+				int x = j / 10, y = j % 10;
+
+				_putchar(x);
+				_putchar(y);
 		}
 		_putchar('\n');
 	}

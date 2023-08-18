@@ -4,13 +4,13 @@
 /**
  * print_numbers - Function
  *
- * Description: whether char is upper or lower case
+ * Description: print numbers from 0 to 9 
  *
- * Return: 1 (upper) 0 (lower)
+ * Return: no return value
 */
 void print_numbers(void)
 {
-	for (char i = 48 ; i < 57 ; i++)
+	for (char i = 48 ; i < 58 ; i++)
 	{
 		putchar(i);
 	}

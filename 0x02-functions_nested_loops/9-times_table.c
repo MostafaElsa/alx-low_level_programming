@@ -31,9 +31,11 @@ void times_table(void)
 				}
 				else
 				{
+					int y = x / 10, z = y % 10;
 					_putchar(',');
 					_putchar(' ');
-					_putchar('0' + x);
+					_putchar('0' + y);
+					_putchar('0' + z);
 				}
 			}
 			else

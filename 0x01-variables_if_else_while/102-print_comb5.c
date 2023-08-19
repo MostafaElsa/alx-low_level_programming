@@ -16,16 +16,16 @@ int main(void)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			for (z = i; z < 10; z++)
+			for (k = i; k < 10; k++)
 			{
 				for (l = j + 1; l < 10; l++)
 				{
 					putchar(i + 48);
 					putchar(j + 48);
 					putchar(' ');
-					putchar(z + 48);
+					putchar(k + 48);
 					putchar(l + 48);
-					if (i != 9 || j != 8 || z != 9 || l != 9)
+					if (i != 9 || j != 8 || k != 9 || l != 9)
 					{
 						putchar(',');
 						putchar(' ');

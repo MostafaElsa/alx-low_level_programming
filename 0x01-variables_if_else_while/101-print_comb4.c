@@ -17,10 +17,11 @@ int main(void)
 		for (j = i + 1; j < 10; j++)
 		{
 			for (z = j + 1; z < 10; z++)
-
-			putchar(i + 48);
-			putchar(j + 48);
-			putchar(z + 48);
+			{
+				putchar(i + 48);
+				putchar(j + 48);
+				putchar(z + 48);
+			}
 			if (i != 7 || j != 8 || z != 9)
 			{
 				putchar(',');

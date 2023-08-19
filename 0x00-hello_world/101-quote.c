@@ -9,6 +9,11 @@
 int main(void)
 {
 	char c[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	int i;
 
-	return (write(1, &c, 1));
+	i = 0;
+	for (i = 0; i < 59 ; i++)
+	{
+		return (write(1, &c[i], 1));
+	}
 }

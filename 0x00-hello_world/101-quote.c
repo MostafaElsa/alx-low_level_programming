@@ -16,4 +16,5 @@ int main(void)
 	{
 		return (write(1, &c[i], 1));
 	}
+	return (1);
 }

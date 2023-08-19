@@ -10,20 +10,27 @@
  */
 int main(void)
 {
-	int i, j, counter;
+	int i, j, k, l;
 
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			putchar(i + 48);
-			putchar(j + 48);
-			counter++;
-			if ((counter == 2) && (i != 9 || j != 9))
+			for (z = i; z < 10; z++)
 			{
-				putchar(',');
-				putchar(' ');
-				counter = 0;
+				for (l = j + 1; l < 10; l++)
+				{
+					putchar(i + 48);
+					putchar(j + 48);
+					putchar(' ');
+					putchar(z + 48);
+					putchar(l + 48);
+					if (i != 9 || j != 8 || z != 9 || l != 9)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
 		}
 	}

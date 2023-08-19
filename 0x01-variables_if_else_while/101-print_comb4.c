@@ -21,11 +21,11 @@ int main(void)
 				putchar(i + 48);
 				putchar(j + 48);
 				putchar(z + 48);
-			}
-			if (i != 7 || j != 8 || z != 9)
-			{
-				putchar(',');
-				putchar(' ');
+				if (i != 7 || j != 8 || z != 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}

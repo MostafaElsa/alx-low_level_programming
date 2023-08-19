@@ -11,10 +11,10 @@
 
 int main(void)
 {
-	long long i, x;
+	long long i, j;
 	int c;
 
-	for (i = 612852475143 ; ; i++)
+	for (i = 612852475143 ; ; i--)
 	{
 		c = 1;
 		for (j = 2 ; j * j <= i  ; j++)

@@ -14,7 +14,7 @@ int main(void)
 	i = 0;
 	for (i = 0; i < 59 ; i++)
 	{
-		return (write(1, &c[i], 58));
+		return (write(1, &c[i], 59));
 	}
 	return (1);
 }

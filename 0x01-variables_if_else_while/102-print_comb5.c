@@ -10,16 +10,19 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	int i, j, k, l, counter;
 
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < 10; j++)
 		{
+			counter = 0;
 			for (k = i; k < 10; k++)
 			{
-				for (l = j + 1; l < 10; l++)
+				for (l = 0; l < 10; l++)
 				{
+					if (k == i && counter == 0)
+						l = j + 1;
 					putchar(i + 48);
 					putchar(j + 48);
 					putchar(' ');
@@ -30,10 +33,14 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
+					else
+					{
+						putchar('\n');
+						return (0);
+					}
 				}
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
 }

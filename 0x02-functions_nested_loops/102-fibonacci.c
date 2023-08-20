@@ -11,14 +11,14 @@
 int main(void)
 {
 	int i;
-	unsigned int a = 1, b = 2, res;
+	long int a = 1L, b = 2L, res = 0L;
 
 	for (i = 0 ; i < 50 ; i++)
 	{
 		if (i != 49)
-			printf("%d, ", a);
+			printf("%ld, ", a);
 		else
-			printf("%d", a);
+			printf("%ld", a);
 		res = a + b;
 		a = b;
 		b = res;

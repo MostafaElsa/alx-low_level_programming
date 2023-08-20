@@ -21,9 +21,9 @@ void print_times_table(int n)
 
 			for (j = 0 ; j <= n ; j++)
 			{
-				int x = i * j;
+				int x = (i * j) + 48;
 
-				_putchar(x + 48);
+				_putchar(x);
 				if (j != n)
 				{
 					_putchar(',');

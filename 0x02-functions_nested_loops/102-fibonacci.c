@@ -10,7 +10,7 @@
 */
 int main(void)
 {
-	int a = 1, b = 2, res;
+	int i, a = 1, b = 2, res;
 
 	for (i = 0 ; i < 50 ; i++)
 	{

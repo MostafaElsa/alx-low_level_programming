@@ -12,35 +12,22 @@ int main(void)
 {
 	int i, j, k, l, counter;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i <= 99; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = i + 1; j <= 99; j++)
 		{
-			counter = 0;
-			for (k = i; k < 10; k++)
+			putchar((i / 10) + 48);
+			putchar((i % 10) + 48);
+			putchar(' ');
+			putchar((j / 10) + 48);
+			putchar((i % 10) + 48);	
+			if (i != 98 || j != 99)
 			{
-				for (l = 0; l < 10; l++)
-				{
-					if (k == i && counter == 0)
-						l = j + 1;
-					putchar(i + 48);
-					putchar(j + 48);
-					putchar(' ');
-					putchar(k + 48);
-					putchar(l + 48);
-					counter++;
-					if (i != 9 || j != 8 || k != 9 || l != 9)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-					else
-					{
-						return (0);
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }

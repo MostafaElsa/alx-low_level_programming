@@ -10,7 +10,8 @@
 */
 int main(void)
 {
-	int i, a = 1, b = 2, res;
+	int i;
+	long long a = 1, b = 2, res;
 
 	for (i = 0 ; i < 50 ; i++)
 	{

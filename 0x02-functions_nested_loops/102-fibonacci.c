@@ -18,7 +18,7 @@ int main(void)
 		if (i != 49)
 			printf("%ld, ", a);
 		else
-			printf("%ld", a);
+			printf("%ld\n", a);
 		res = a + b;
 		a = b;
 		b = res;

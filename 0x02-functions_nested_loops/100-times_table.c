@@ -40,6 +40,7 @@ void print_times_table(int n)
 				}
 				_putchar((x % 10) + 48);
 			}
+			_putchar('\n');
 		}
 	}
 	else

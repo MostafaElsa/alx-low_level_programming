@@ -10,7 +10,7 @@
 */
 int main(void)
 {
-	int i, j, sum = 0;
+	int i, sum = 0;
 
 	for (i = 3 ; i < 1024 ; i++)
 	{
@@ -20,4 +20,5 @@ int main(void)
 		}
 	}
 	printf("%d\n", sum);
+	return (0);
 }

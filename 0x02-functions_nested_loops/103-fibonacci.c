@@ -10,7 +10,6 @@
 */
 int main(void)
 {
-	int i;
 	long int a = 1L, b = 2L, sum = 0L, res = 0L;
 
 	while (a <= 4000000)

@@ -14,7 +14,7 @@ void print_rev(char *s)
 
 	int i;
 
-	i = strlen(s);
+	i = _strlen(s);
 	while (i)
 	{
 		i--;

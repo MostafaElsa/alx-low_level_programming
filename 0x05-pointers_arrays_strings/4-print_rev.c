@@ -9,7 +9,7 @@
  * Return: 1 (digit) 0 (not)
 */
 
-void print_rev(char *s);
+void print_rev(char *s)
 {
 
 	int i;

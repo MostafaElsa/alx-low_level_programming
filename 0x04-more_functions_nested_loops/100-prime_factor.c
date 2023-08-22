@@ -11,24 +11,15 @@
 
 int main(void)
 {
-	long long i, j;
-	int c;
+	int long i;
 
-	for (i = 612852475143 ; ; i--)
+	for (i = 782849 ; ; i--)
 	{
-		c = 1;
-		for (j = 2 ; j * j <= i  ; j++)
+		if (612852475143 % i != 0)
 		{
-			if (i % j == 0)
-			{
-				c = 0;
-				break;
-			}
-		}
-		if (c == 1)
-		{
-			printf("%lld\n");
+			printf("%ld\n", i);
 			break;
 		}
 	}
+	return (0);
 }

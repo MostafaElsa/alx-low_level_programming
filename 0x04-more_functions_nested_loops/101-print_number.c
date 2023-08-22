@@ -13,19 +13,15 @@ void print_number(int n)
 {
 	int counter;
 
-	counter = 1;
-	while(n != 0)
-	{
-		n /= 10;
+	counter = 10;
+	while(counter < n)
 		counter *= 10;
-	}
-	int i;
-
-	for (i = counter ; i > 0 ; i /= 10)
+	counter /= 10;
+	while (n != 0)
 	{
-
-
-
+		int x = n % counter;
+		_putchar(x + '0');
+		n -= (x * counter);
+		counter /= 10;
 	}
-
 }

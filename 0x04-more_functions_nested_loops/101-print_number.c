@@ -26,7 +26,9 @@ void print_number(int n)
 	{
 		int x = n / counter;
 
-		_putchar(x + 48);
+		x += 48;
+		_putchar(x);
+		x -= 48;
 		n -= (x * counter);
 		counter /= 10;
 	}

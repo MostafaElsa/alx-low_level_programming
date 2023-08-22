@@ -31,5 +31,4 @@ void print_number(int n)
 		n -= (x * counter);
 		counter /= 10;
 	}
-	_putchar('\n');
 }

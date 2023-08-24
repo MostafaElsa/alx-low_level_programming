@@ -18,8 +18,7 @@ char *cap_string(char *a)
 	i++;
 	while (a[i] != '\0')
 	{
-		if (a[i] = 
-		else if (a[i] == ' ' || a[i] == '\t' || a[i] == '\n' || a[i] == ',')
+		if (a[i] == ' ' || a[i] == '\t' || a[i] == '\n' || a[i] == ',')
 		{
 			if (a[i + 1] >= 'a' && a[i + 1] <= 'z')
 				a[i + 1] -= 32;
@@ -27,12 +26,12 @@ char *cap_string(char *a)
 		else if (a[i] == ';' || a[i] == '.' || a[i] == '!')
 		{
 			if (a[i + 1] >= 'a' && a[i + 1] <= 'z')
-			a[i + 1] -= 32;
+				a[i + 1] -= 32;
 		}
 		else if (a[i] == ')' || a[i] == '{' || a[i] == '}')
 		{
 			if (a[i + 1] >= 'a' && a[i + 1] <= 'z')
-			a[i + 1] -= 32;
+				a[i + 1] -= 32;
 		}
 		else if (a[i] == '?' || a[i] == '"' || a[i] == '(')
 		{

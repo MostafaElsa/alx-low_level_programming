@@ -11,7 +11,10 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	do {
+	int j = 0;
+
+	while (1)
+	{
 		if (s1[j] - s2[j] > 0)
 			return (s1[j] - s2[j]);
 		else if (s1[j] - s2[j] < 0)
@@ -22,6 +25,5 @@ int _strcmp(char *s1, char *s2)
 				return (0);
 			j++;
 		}
-	} while (1);
+	}
 }
-

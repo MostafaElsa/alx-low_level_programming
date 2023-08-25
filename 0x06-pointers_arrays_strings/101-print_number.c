@@ -10,16 +10,25 @@
 
 void print_number(int n)
 {
-	unsigned int counter = n;
+	unsigned int counter, m, x;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		counter = -1 * n;
+		m = -1 * n;
 	}
-	if (counter / 10 != 0)
+	else
+		m = n;
+	counter = 10;
+	while (counter <= m)
+		counter *= 10;
+	counter /= 10;
+	while (counter != 0)
 	{
-		print_number(counter / 10);
+		x = m / counter;
+
+		_putchar(x + 48);
+		m -= (x * counter);
+		counter /= 10;
 	}
-	_putchar((counter % 10) + 48);
 }

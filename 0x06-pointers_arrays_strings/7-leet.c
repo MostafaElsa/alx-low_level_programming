@@ -11,36 +11,21 @@
 
 char *leet(char *a)
 {
-	int i = -1;
+	int i = 0, j;
 
-	while (a[++i] != '\0')
+	char x[] = "aeotl";
+	char y[] = "43071";
+
+	while (a[i])
 	{
-		if (a[i] == 'A' || a[i] == 'a')
+		for (j = 0 ; j < 5 ; j++)
 		{
-			a[i] = 52;
-			continue;
+			if (a[i] == x[j] || a[i] == x[j] - 32)
+			{
+				a[i] = y[j];
+				break;
+			}
 		}
-		if (a[i] == 'e' || a[i] == 'E')
-		{
-			a[i] = 51;
-			continue;
-		}
-		if (a[i] == 'O' || a[i] == 'o')
-		{
-			a[i] = 48;
-			continue;
-		}
-		if (a[i] == 'T' || a[i] == 't')
-		{
-			a[i] = 55;
-			continue;
-		}
-		if (a[i] == 'l' || a[i] == 'L')
-		{
-			a[i] = 49;
-			continue;
-		}
+		i++;
 	}
-	a[i] = '\0';
-	return (a);
 }

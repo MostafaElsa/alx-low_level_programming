@@ -11,22 +11,22 @@
 
 char *rot13(char *a)
 {
-	int i;
+	int i = 0, j = 0;
 
 	char x[] = {abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ};
 	char y[] = {nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM};
 
-	while (*a)
+	while (a[i])
 	{
-		for (i = 0 ; i < 52 ; i++)
+		for (j = 0 ; j < 52 ; j++)
 		{
-			if (*a == x[i])
+			if (a[i] == x[j])
 			{
-				*a = y[i];
+				a[i] = y[j];
 				break;
 			}
 		}
-		a++;
+		i++;
 	}
 	return (a);
 }

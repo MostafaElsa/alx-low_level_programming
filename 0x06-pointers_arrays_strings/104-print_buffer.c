@@ -22,7 +22,7 @@ void print_buffer(char *b, int size)
 			printf("%08x", x);
 			printf(":");
 		}
-		while (i--)
+		while (i)
 		{
 			if (x % 2 == 0)
 				printf(" ");
@@ -31,12 +31,13 @@ void print_buffer(char *b, int size)
 			else
 				printf("  ");
 			x++;
+			i--;
 		}
 		if (y % 10 == 0)
 		{
 			printf(" ");
 		}
-		while (j--)
+		while (j)
 		{
 			if (y >= size)
 				printf(" ");
@@ -45,6 +46,7 @@ void print_buffer(char *b, int size)
 			else
 				printf(".");
 			y++;
+			j--;
 		}
 		printf("\n");
 	}

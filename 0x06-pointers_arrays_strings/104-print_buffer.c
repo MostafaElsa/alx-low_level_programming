@@ -13,41 +13,42 @@ void print_buffer(char *b, int size)
 {
 	int i, j, x = 0, y = 0;
 
-	while (x < size)
+	if (size > 0)
 	{
-		i = 10;
-		j = 10;
-		if (x % 10 == 0)
+		while (x < size)
 		{
-			printf("%08x", x);
-			printf(":");
-		}
-		while (i)
-		{
-			if (x % 2 == 0)
+			i = 10;
+			j = 10;
+			if (x % 10 == 0)
+			{
+				printf("%08x", x);
+				printf(":");
+			}
+			while (i--)
+			{
+				if (x % 2 == 0)
+					printf(" ");
+				if (x < size)
+					printf("%02x", *(b + x++));
+				else
+					printf("  ");
+			}
+			if (y % 10 == 0)
+			{
 				printf(" ");
-			if (x < size)
-				printf("%02x", *(b + x));
-			else
-				printf("  ");
-			x++;
-			i--;
+			}
+			while (j--)
+			{
+				if (y >= size)
+					printf(" ");
+				else if (*(b + y) >= 32 && *(b + y) <= 126)
+					printf("%c", *(b + y++));
+				else
+					printf(".");
+			}
+			printf("\n");
 		}
-		if (y % 10 == 0)
-		{
-			printf(" ");
-		}
-		while (j)
-		{
-			if (y >= size)
-				printf(" ");
-			else if (*(b + y) >= 32 && *(b + y) <= 126)
-				printf("%c", *(b + y));
-			else
-				printf(".");
-			y++;
-			j--;
-		}
-		printf("\n");
 	}
+	else
+		printf("\n");
 }

@@ -40,7 +40,7 @@ void print_buffer(char *b, int size)
 			while (j--)
 			{
 				if (y >= size)
-					printf(" ");
+					break;
 				else if (*(b + y) >= 32 && *(b + y) <= 126)
 					printf("%c", *(b + y++));
 				else

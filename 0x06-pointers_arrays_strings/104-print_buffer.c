@@ -1,51 +1,42 @@
 #include "main.h"
 
 /**
- * print_buffer - Function
- * @b: char
- * @size: int
- * Description: whether char is upper or lower case
- *
- * Return: 1 (upper) 0 (lower)
-*/
-
+ * print_buffer - prints a buffer
+ * @b: buffer.
+ * @size: size of buffer.
+ * Return: no return.
+ */
 void print_buffer(char *b, int size)
 {
-	int i, j, x = 0, y = 0;
+	int i, j, k;
 
-	if (size > 0)
+	if (size <= 0)
+		printf("\n");
+	else
 	{
-		while (x < size)
+		for (i = 0; i < size; i += 10)
 		{
-			i = 10;
-			j = 10;
-			if (x % 10 == 0)
+			printf("%.8x:", i);
+			for (j = i; j < i + 10; i++)
 			{
-				printf("%.8x", x);
-				printf(":");
-			}
-			while (i--)
-			{
-				if (x % 2 == 0)
+				if (j % 2 == 0)
 					printf(" ");
-				if (x < size)
-					printf("%.2x", *(b + x++));
+				if (j < size)
+					printf("%.2x", *(b + j));
 				else
 					printf("  ");
 			}
 			printf(" ");
-			while (j--)
+			for (k = i; k < i + 10; k++)
 			{
-				if (y >= size)
+				if (k >= size)
 					break;
-				else if (*(b + y) >= 32 && *(b + y) <= 126)
-					printf("%c", *(b + y++));
+				if (*(b + k) < 32 || *(b + k) > 126)
+					printf("%c", '.');
 				else
-					printf(".");
+					printf("%c", *(b + k));
 			}
 			printf("\n");
 		}
 	}
-	else
-		printf("\n");
 }

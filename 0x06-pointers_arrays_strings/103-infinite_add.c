@@ -35,7 +35,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		else
 			x = 0;
 		if (res > 0)
-		*(r + max) = (res - 10) + 48;
+		*(r + max) = (res % 10) + 48;
 		else
 			*(r + max) = '0';
 		if (i > 0)

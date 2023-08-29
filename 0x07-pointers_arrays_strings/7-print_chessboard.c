@@ -2,7 +2,7 @@
 
 /**
  *  * print_chessboard - function
- *  @a[8]: array of pointers
+ *  @a: array of pointers
  *
  *  Return: Nothing.
  */

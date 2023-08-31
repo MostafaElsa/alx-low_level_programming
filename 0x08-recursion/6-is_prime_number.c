@@ -7,12 +7,15 @@
  */
 int is_prime_number(int n)
 {
-	if (y < 0)
-		return (-1);
-	else if (y == 0)
-		return (1);
-	{
-		y--;
-		return (x * _pow_recursion(x, y));
-	}
+	if (n <= 1)
+		return (0);
+	return (_prime(n, 2);
+}
+int _prime(int n, int r)
+{
+    if (r < n && n % r == 0)
+        return (0);
+    if (r = n)
+        return (1);
+    return (n, ++r);
 }

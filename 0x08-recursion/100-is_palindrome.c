@@ -23,9 +23,9 @@ int _palindrome(int i, int j, char *s)
  */
 int _strlen(char *s)
 {
-	if(*s == '\0');
+	if(*s == '\0')
 		return (0);
-	return (1 + _strlen(++s);
+	return (1 + _strlen(++s));
 }
 
 /**

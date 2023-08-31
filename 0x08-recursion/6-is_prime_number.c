@@ -12,7 +12,7 @@ int _prime(int n, int r)
 		return (0);
 	if (r == n)
 		return (1);
-	return _prime(n, ++r);
+	return (_prime(n, ++r));
 }
 
 /**

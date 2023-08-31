@@ -17,7 +17,7 @@ int _palindrome(int i, int j, char *s)
 }
 
 /**
- *	strlen - check the code
+ *	_strlen - check the code
  *	@s: string
  *	Return: result
  */

@@ -8,11 +8,11 @@
  */
 int _prime(int n, int r)
 {
-    if (r < n && n % r == 0)
-        return (0);
-    if (r == n)
-        return (1);
-    return _prime(n, ++r);
+	if (r < n && n % r == 0)
+		return (0);
+	if (r == n)
+		return (1);
+	return _prime(n, ++r);
 }
 
 /**

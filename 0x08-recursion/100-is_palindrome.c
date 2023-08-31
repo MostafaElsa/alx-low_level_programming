@@ -23,7 +23,7 @@ int _palindrome(int i, int j, char *s)
  */
 int _strlen(char *s)
 {
-	if(*s == '\0')
+	if (*s == '\0')
 		return (0);
 	return (1 + _strlen(++s));
 }
@@ -36,5 +36,6 @@ int _strlen(char *s)
 int is_palindrome(char *s)
 {
 	int i = _strlen(s) - 1;
+
 	return (_palindrome(0, i, s));
 }

@@ -17,12 +17,24 @@ int _palindrome(int i, int j, char *s)
 }
 
 /**
+ *	strlen - check the code
+ *	@s: string
+ *	Return: result
+ */
+int _strlen(char *s)
+{
+	if(*s == '\0');
+		return (0);
+	return (1 + _strlen(++s);
+}
+
+/**
  *	is_palindrome - check the code
  *	@s: string
  *	Return: result
  */
 int is_palindrome(char *s)
 {
-	int i = _strlen_recursion(s) - 1;
+	int i = _strlen(s) - 1;
 	return (_palindrome(0, i, s));
 }

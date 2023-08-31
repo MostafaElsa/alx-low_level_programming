@@ -7,12 +7,21 @@
  */
 int _sqrt_recursion(int n)
 {
-	if (y < 0)
+	if (n < 0)
 		return (-1);
-	else if (y == 0)
-		return (1);
-	{
-		y--;
-		return (x * _pow_recursion(x, y));
+	return (_sqrt_recursion(n, 1));
 	}
 }
+/**
+ *	_sqrt - check the code
+ *	@n: number
+ *	@r: root
+ *	Return: result
+ */
+int _sqrt_recursion(int n, int r)
+{
+    if (r * r > n)
+        return (-1);
+    if (r * r == n)
+        return (r);
+    _sqrt_recursion(n, ++r);

@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
 	if (argc != 3)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 	while (argv[1][i] != '\0')

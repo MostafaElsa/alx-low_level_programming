@@ -10,7 +10,7 @@
 int main(int argc, char **argv)
 {
 
-	int i = 0, j = 0, res2 = 0, dec2 = 0;
+	int i = 0, j = 0, res1 = 0, res2 = 0, dec = 1;
 
 	if (argc != 3)
 	{
@@ -21,26 +21,23 @@ int main(int argc, char **argv)
 		i++;
 	while (argv[2][j] != '\0')
 		j++;
-	for (; i >= 0 ; i--)
+	while (i--)
 	{
-		int x, mod = 0, res = 0, dec = 1;
-
-		for (; j >= 0; j--)
-		{
-			x = (int)(argv[i] - 1) * (int)(argv[j] - 1) + mod;
-			if (x > 9)
-			{
-				x %= 10;
-				mod = 1;
-			}
-			else
-				mod = 0;
-			res += x * dec;
-			dec *= 10;
-		}
-		res2 += (res * dec2);
-		dec2 *= 10;
+		if (argv[1][i] != '-')
+			res1 += (int)(argv[1][i] - 48) * dec;
+		else
+			res1 *= -1;
+		dec *= 10;
 	}
-	printf("%d\n", res2);
+	dec = 1;
+	while (j--)
+	{
+		if (argv[2][j] != '-')
+			res2 += (int)(argv[2][j] - 48) * dec;
+		else
+			res2 *= -1;
+		dec *= 10;
+	}
+	printf("%d\n", res2 * res1);
 	return (0);
 }

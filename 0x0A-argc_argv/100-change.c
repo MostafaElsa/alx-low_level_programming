@@ -27,6 +27,9 @@ int main(int argc, char **argv)
 	res += (x / 2);
 	x %= 2;
 	res += x;
-	printf("%d\n", res);
+	if (res < 0)
+		printf("%d\n", 0);
+	else
+		printf("%d\n", res);
 	return (0);
 }

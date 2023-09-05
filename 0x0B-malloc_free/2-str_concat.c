@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * str_concat - concate two strings
+ * *str_concat - concate two strings
  * @s1: the 1st string
  * @s2: the 2nd string
  * Return: pointer to the newly allocated contain s1 -> s2 -> '\0'

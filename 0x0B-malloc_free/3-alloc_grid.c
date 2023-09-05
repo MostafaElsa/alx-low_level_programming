@@ -3,29 +3,26 @@
 #include <stdlib.h>
 
 /**
- * str_concat - concate two strings
- * @s1: the 1st string
- * @s2: the 2nd string
- * Return: pointer to the newly allocated contain s1 -> s2 -> '\0'
+ * alloc_grid - create 2D array initialized to 0
+ * @width: the 1st Dim
+ * @height: the 2nd Dim
+ * Return: pointer to 2Dim array
  */
-char *str_concat(char *s1, char *s2)
+int **alloc_grid(int width, int height)
 {
-	int i = 0, j = 0;
-	char *ptr;
+	int i = 0, j = 0, *ptr;
 
-	while (s1 != NULL && s1[i] != '\0')
-		i++;
-	while (s2 != NULL && s2[j] != '\0')
-		j++;
-	ptr = (char *)malloc(i + j + 1);
+	if (width <= 0 || height <= 0)
+		return (NULL);
+	ptr = (int *)malloc(width * height);
 	if (ptr == NULL)
 		return (NULL);
-	i = 0, j = 0;
-	while (s1 != NULL && s1[j] != '\0')
-		ptr[i++] = s1[j++];
-	j = 0;
-	while (s2 != NULL && s2[j] != '\0')
-		ptr[i++] = s2[j++];
-	ptr[i] = '\0';
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
+		{
+			ptr[i][j] = 0;
+		}
+	}
 	return (ptr);
 }

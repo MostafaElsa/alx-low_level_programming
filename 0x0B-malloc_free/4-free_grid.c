@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,4 +26,25 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return (ptr);
+=======
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+
+/**
+* free_grid - function that free 2D array of int
+* @grid: pointer to pointers of 1D array of int
+* @height: number of rows
+*/
+
+void free_grid(int **grid, int height)
+{
+  int i;
+
+  for (i = 0; i < height; i++)
+  {
+    free(grid[i]);
+  }
+  free(grid);
+>>>>>>> 6b49af5f5c9e441e07c291fc7869269fba444f0a
 }

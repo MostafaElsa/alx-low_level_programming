@@ -3,23 +3,26 @@
 #include "main.h"
 
 /**
-* argstostr - function that  that concatenates all the arguments
-* @ac: number of arguments
-* @av: arguments
-* Return: pointer to result arguments
-*/
+ * argstostr - function that  that concatenates all the arguments
+ * @ac: number of arguments
+ * @av: arguments
+ * Return: pointer to result arguments
+ */
 
 char *argstostr(int ac, char **av)
 {
-	int i;
-	char **ptr;
+	int i, size;
+	char *ptr;
 
-	ptr = (char **)malloc(sizeof(char *) * ac);
 	if (av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
+		size += sizeof(av[i]);
+	ptr = (char *)malloc(sizeof(size);
+	size--;
+	*(ptr + size) = '\0';
+	for (i = 0; i < ac; i++)
 	{
-		ptr[i] = (char *)malloc(sizeof(av[i]));
 		if (av[i] == NULL)
 		{
 			while (i >= 0)
@@ -28,12 +31,14 @@ char *argstostr(int ac, char **av)
 				i--;
 			}
 			free(av);
+			return (NULL);
 		}
-		else
+		while (size--)
 		{
-			ptr[i] = av[i];
-			if (i != ac - 1)
-				ptr[i][sizeof(av[i]) - 1] = '\n';
+			if (av[i][size] == '\0')
+				*(ptr + size) = '\n';
+			else
+				*(ptr + size) = av[i][size];
 		}
 	}
 	return (ptr);

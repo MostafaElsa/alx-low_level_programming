@@ -18,7 +18,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 		size += sizeof(av[i]);
-	ptr = (char *)malloc(sizeof(size);
+	ptr = (char *)malloc(sizeof(size));
 	size--;
 	*(ptr + size) = '\0';
 	for (i = 0; i < ac; i++)

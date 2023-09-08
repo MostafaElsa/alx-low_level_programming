@@ -4,28 +4,34 @@
 #include <limits.h>
 
 /**
- * main - check the code
+ * _realloc - check the malloc
  *
- * Return: Always 0.
+ * @ptr: pointer to allocated array
+ * @old_size: size of allocated array
+ * @new_size: new size of allocated memory
+ * Return: pointer of the allocated memory
  */
-int main(void)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *c;
-	int *i;
-	float *f;
-	double *d;
+	void *x;
 
-	c = malloc_checked(sizeof(char) * 1024);
-	printf("%p\n", (void *)c);
-	i = malloc_checked(sizeof(int) * 402);
-	printf("%p\n", (void *)i);
-	f = malloc_checked(sizeof(float) * 100000000);
-	printf("%p\n", (void *)f);
-	d = malloc_checked(INT_MAX);
-	printf("%p\n", (void *)d);
-	free(c);
-	free(i);
-	free(f);
-	free(d);
-	return (0);
+	if (ptr == NULL)
+	{
+		ptr = malloc(new_size);
+		return (ptr);
+	}
+	if (new_size == 0)
+	{
+		free(ptr);
+		return (NULL);
+	}
+	if (new_size > old_size)
+	{
+		x = malloc(new_size);
+		x = ptr;
+		free(ptr);
+		return (x);
+	}
+	if (new_size == old_size)
+		return (ptr);
 }

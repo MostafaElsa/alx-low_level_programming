@@ -3,20 +3,28 @@
 #include <limits.h>
 
 /**
- * _calloc - check the malloc
+ * array_range - return pointer to array ranged from min to max
  *
- * @nmemb: number of elements of array
- * @size: size of element
+ * @min: small int
+ * @max: largest int
  * Return: pointer to allocated memory
  */
-void *_calloc(unsigned int nmemb, unsigned int size)
+int *array_range(int min, int max)
 {
-	unsigned int i;
-	char *ptr = malloc(size * nmemb);
+	unsigned int i, size;
+	int *ptr;
 
-	if (nmemb == 0 || size == 0 || ptr == NULL)
+	if (min > max)
 		return (NULL);
-	for (i = 0; i < nmemb * size; i++)
-		*(ptr + i) = 0;
+	size = max - min + 1;
+	ptr = malloc(size * sizeof(int));
+
+	if (ptr == NULL)
+		return (NULL);
+	for (i = 0; i < size; i++)
+	{
+		*(ptr + i) = min;
+		min++;
+	}
 	return (ptr);
 }

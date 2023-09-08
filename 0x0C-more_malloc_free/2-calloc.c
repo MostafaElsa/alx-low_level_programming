@@ -3,11 +3,11 @@
 #include <limits.h>
 
 /**
- * _calloc - check the malloc
- *
- * @nmemb: number of elements of array
- * @size: size of element
- * Return: pointer to allocated memory
+ *  * _calloc - check the malloc
+ *   *
+ *    * @nmemb: number of elements of array
+ *     * @size: size of element
+ *      * Return: pointer to allocated memory
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -17,6 +17,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0 || ptr == NULL)
 		return (NULL);
 	for (i = 0; i < nmemb * size; i++)
-		*(ptr + i) = 0;
+		*((char *)(ptr + i)) = 0;
 	return (ptr);
 }

@@ -4,43 +4,29 @@
 #include <limits.h>
 
 /**
- * string_nconcat - check the malloc
+ * _realloc - check the malloc
  *
- * @s1: pointer to first string
- * @s2: pointer to second string
- * @n: size of allocated memory
- * Return: pointer of the allocated memory if success or 98 if fails
+ * @ptr: pointer to allocated array
+ * @old_size: size of allocated array
+ * @new_size: new size of allocated memory
+ * Return: pointer of the allocated memory
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *ptr;
-	unsigned int i = 0, j = 0, size;
+	void *x;
 
-	while (s1[i] != '\0' && s1 != NULL)
-		i++;
-	while (s2[j] != '\0' && s2 != NULL)
-		j++;
-	if (n < j)
-		j = n;
-	size = i + j + 1;
-	ptr = (char *)malloc(size);
 	if (ptr == NULL)
 		return (NULL);
-	i = 0;
-	j = 0;
-	while (s1[j] != '\0')
+	if (new_size == 0)
 	{
-		ptr[i] = s1[j];
-		j++;
-		i++;
+		free(ptr);
+		return (NULL);
 	}
-	j = 0;
-	while (i < size - 1)
-	{
-		ptr[i] = s2[j];
-		j++;
-		i++;
-	}
-	ptr[i] = '\0';
+	if (new_size == old_size)
+		return (ptr);
+	x = malloc(old_size);
+	ptr = malloc(new_size);
+	ptr = x;
 	return (ptr);
 }
+

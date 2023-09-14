@@ -2,12 +2,18 @@
 #include "function_pointers.h"
 
 /**
- * print_name - function
- * @name: char pionter
- * @f: pointer to function
+ * array_iterator - function
+ * @array: int pionter
+ * @size: size of array
+ * @action: pointer to function
  */
 
-void print_name(char *name, void (*f)(char *))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	(*f)(name);
+	int i;
+
+	for (i = 0; i < size; i++)
+	{
+		*(action)(array[i]);
+	}
 }

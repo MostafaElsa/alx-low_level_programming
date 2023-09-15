@@ -12,11 +12,10 @@ int (*get_op_func(char *s))(int a, int b)
 	};
 	int i;
 
-	for (i = 0; i < 6; i++)
+	for (i = 0; i < 5; i++)
 	{
-		if (*s == *(ops[i].op))
+		if (s && *s == (ops[i].op[0]))
 			return (ops[i].f);
 	}
-	printf("Error\n");
-	exit(99);
+	return (NULL);
 }

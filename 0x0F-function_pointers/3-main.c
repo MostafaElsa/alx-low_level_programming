@@ -6,13 +6,13 @@ int main(int argc, char *argv[])
 {
 	int a, b;
 
-	if (argc != 3)
+	if (argc != 4)
 	{
 		printf("Error");
 		exit(98);
 	}
-	a = atoi(argv[0]);
-	b = atoi(argv[2]);
-	int x = (get_op_func(argv[1]))(a, b);
-	printf("%d", x);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	printf("%d\n", (*(get_op_func(argv[2])))(a, b));
+	return(0);
 }

@@ -1,6 +1,6 @@
 #include "3-calc.h"
 
-int (*get_op_func(char *s))(int, int)
+int (*get_op_func(char *s))(int a, int b)
 {
 	op_t ops[] = {
 		{"+", op_add},
@@ -14,9 +14,9 @@ int (*get_op_func(char *s))(int, int)
 
 	for (i = 0; i < 6; i++)
 	{
-		if (*s == *(op[i].op))
-			return (*(op[i].f));
+		if (*s == *(ops[i].op))
+			return (ops[i].f);
 	}
-	printf("Error");
+	printf("Error\n");
 	exit(99);
 }

@@ -1,5 +1,11 @@
 #include "3-calc.h"
 
+/**
+ *  * get_op_func - Struct op
+ *   *
+ *    * @s: string
+ *    Return: pointer to a function
+ */
 int (*get_op_func(char *s))(int a, int b)
 {
 	op_t ops[] = {

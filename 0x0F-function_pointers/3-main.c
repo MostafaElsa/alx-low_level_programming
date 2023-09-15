@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include "3-calc.h"
 
+/**
+ *  * main - Struct op
+ *   *
+ *    * @argc: number of arguments
+ *     * @argv: arguments arrays
+ *     Return: always 0
+ */
 int main(int argc, char *argv[])
 {
 	int (*op_func)(int, int), a, b;
@@ -21,5 +28,5 @@ int main(int argc, char *argv[])
 	}
 	else
 		printf("%d\n", op_func(a, b));
-	return(0);
+	return (0);
 }

@@ -19,7 +19,7 @@ void print_number(int n)
 	}
 	else
 		m = n;
-	counter = 10;
+	counter = 1;
 	while (m / counter >= 10)
 		counter *= 10;
 	while (counter != 0)

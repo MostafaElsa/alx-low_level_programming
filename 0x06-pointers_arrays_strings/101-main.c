@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * main - check the code
  *
@@ -7,6 +7,8 @@
  */
 int main(void)
 {
+	print_number(INT_MIN);
+	print_number(INT_MAX);
 	print_number(98);
 	_putchar('\n');
 	print_number(402);

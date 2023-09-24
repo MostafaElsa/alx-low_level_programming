@@ -10,7 +10,7 @@
 
 void print_number(int n)
 {
-	int counter, m, x;
+	unsigned int counter, m, x;
 
 	if (n < 0)
 	{
@@ -20,9 +20,8 @@ void print_number(int n)
 	else
 		m = n;
 	counter = 10;
-	while (counter <= m)
+	while (m / counter >= 10)
 		counter *= 10;
-	counter /= 10;
 	while (counter != 0)
 	{
 		x = m / counter;

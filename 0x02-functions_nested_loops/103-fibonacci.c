@@ -3,14 +3,13 @@
 /**
  * main - entry point
  *
- * Description: print putchar
+ * Description: print sum of even numbers of fibonacci
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
+ * Return: 0
 */
 int main(void)
 {
-	long int a = 1L, b = 2L, sum = 0L, res = 0L;
+	unsigned long int sum = 0L, a = 1L, b = 2L, res = 0L;
 
 	while (a <= 4000000)
 	{
@@ -20,6 +19,6 @@ int main(void)
 		a = b;
 		b = res;
 	}
-	printf("%ld\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }

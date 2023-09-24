@@ -3,23 +3,17 @@
 /**
  * print_to_98 - Function
  * @n: int
- * Description: print putchar
- *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
+ * Description: print all numbers from n to 98
 */
 void print_to_98(int n)
 {
-	if (n >= 98)
+	while (n != 98)
 	{
-		while (n != 98)
-			printf("%d, ", n--);
-		printf("%d\n", n);
+		printf("%d, ", n);
+		if (n > 98)
+			n--;
+		else
+			n++;
 	}
-	else
-	{
-		while (n != 98)
-			printf("%d, ", n++);
-		printf("%d\n", n);
-	}
+	printf("98\n");
 }

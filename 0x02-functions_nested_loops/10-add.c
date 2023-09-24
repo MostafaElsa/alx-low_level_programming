@@ -6,10 +6,9 @@
  * @a: first num
  * @b: second num
  *
- * Description: print putchar
+ * Description: adds two numbers
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
+ * Return: the result
 */
 int add(int a, int b)
 {

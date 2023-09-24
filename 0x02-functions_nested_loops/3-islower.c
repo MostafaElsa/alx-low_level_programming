@@ -3,9 +3,9 @@
 /**
  * _islower - Function
  * @c: char
- * Description: print putchar
+ * Description: whether the char is lower or not
  *
- * Return: On success 1.
+ * Return: if lower 1, else 0
  * On error, -1 is returned, and error is set appropriately.
 */
 int _islower(int c)

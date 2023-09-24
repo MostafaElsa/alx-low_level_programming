@@ -2,14 +2,14 @@
 
 
 /**
- * numLen - entry point
- *
- * @num: int
- * Description: print putchar
- *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
-*/
+ *  * numLen - entry point
+ *   *
+ *    * @num: int
+ *     * Description: print putchar
+ *      *
+ *       * Return: On success 1.
+ *        * On error, -1 is returned, and error is set appropriately.
+ */
 int numLen(int num)
 {
 	int len = 0;
@@ -24,13 +24,13 @@ int numLen(int num)
 	return (length);
 }
 /**
- * main - entry point
- *
- * Description: print putchar
- *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
-*/
+ *  * main - entry point
+ *   *
+ *    * Description: print putchar
+ *     *
+ *      * Return: On success 1.
+ *       * On error, -1 is returned, and error is set appropriately.
+ */
 int main(void)
 {
 	int i, init0s;

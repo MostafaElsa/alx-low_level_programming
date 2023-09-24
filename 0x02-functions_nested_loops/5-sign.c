@@ -3,10 +3,9 @@
 /**
  * print_sign - Function
  * @n: int
- * Description: print putchar
+ * Description: print the sign of number
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
+ * Return: if (n > 0) 0, if (n < 0) -1, else 0
 */
 int print_sign(int n)
 {

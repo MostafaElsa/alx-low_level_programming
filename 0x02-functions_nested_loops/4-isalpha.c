@@ -3,10 +3,9 @@
 /**
  * _isalpha - Function
  * @c: int
- * Description: print putchar
+ * Description: whether char is alpha or not
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
+ * Return: if alpha 1, else 0
 */
 int _isalpha(int c)
 {

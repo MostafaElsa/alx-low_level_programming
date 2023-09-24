@@ -3,10 +3,9 @@
 /**
  * main - entry point
  *
- * Description: print putchar
+ * Description: print sum of 3s and 5s lower than 1024
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
+ * Return: On success 0.
 */
 int main(void)
 {

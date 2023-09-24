@@ -3,23 +3,19 @@
 /**
  * jack_bauer - Function
  *
- * Description: print putchar
+ * Description: print minutes from 00:00 to 23:59
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
 */
 void jack_bauer(void)
 {
-	int i;
+	int i, j, z, m, x, y;
 
 	for (i = 0 ; i < 24 ; i++)
 	{
-		int j, x = i / 10, y = i % 10;
-
+		x = i / 10, y = i % 10;
 		for (j = 0 ; j < 60 ; j++)
 		{
-			int z = j / 10, m = j % 10;
-
+			z = j / 10, m = j % 10;
 			_putchar('0' + x);
 			_putchar('0' + y);
 			_putchar(':');

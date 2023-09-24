@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: false or true vailidation
+ * Description: print combination of 3 digits spaced by ", "
  *
  * Return: 0 (success)
  */
@@ -12,9 +12,9 @@ int main(void)
 {
 	int i, j, z;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 8; i++)
 	{
-		for (j = i + 1; j < 10; j++)
+		for (j = i + 1; j < 9; j++)
 		{
 			for (z = j + 1; z < 10; z++)
 			{

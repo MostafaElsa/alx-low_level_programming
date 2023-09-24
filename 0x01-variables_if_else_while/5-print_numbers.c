@@ -4,16 +4,16 @@
 /**
  * main - Entry point
  *
- * Description: false or true vailidation
+ * Description: print numbers from 0 to 9
  *
  * Return: 0 (success)
  */
 int main(void)
 {
-	int c = 0;
+	char c = 48;
 
-	while (c <= 9)
-		printf("%d", c++);
+	while (c <= 57)
+		putchar(c++);
 	putchar('\n');
 	return (0);
 }

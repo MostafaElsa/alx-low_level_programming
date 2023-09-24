@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: false or true vailidation
+ * Description: print lowercase and uppercase characters
  *
  * Return: 0 (success)
  */

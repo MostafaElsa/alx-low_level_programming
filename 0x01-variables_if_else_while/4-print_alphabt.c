@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: false or true vailidation
+ * Description: print lowercase alphabet except q and e
  *
  * Return: 0 (success)
  */

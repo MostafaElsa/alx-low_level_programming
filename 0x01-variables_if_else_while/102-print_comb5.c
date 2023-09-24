@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: false or true vailidation
+ * Description: print combination of two numbers of two digits
  *
  * Return: 0 (success)
  */

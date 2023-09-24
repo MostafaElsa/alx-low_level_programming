@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: false or true vailidation
+ * Description: print alphabet in reverse
  *
  * Return: 0 (success)
  */

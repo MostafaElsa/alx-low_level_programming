@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: false or true vailidation
+ * Description: print if the number is positive or negative or zero
  *
  * Return: 0 (success)
  */

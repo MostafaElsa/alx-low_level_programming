@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: false or true vailidation
+ * Description: print all digits spaced by ", "
  *
  * Return: 0 (success)
  */

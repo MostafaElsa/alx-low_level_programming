@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: false or true vailidation
+ * Description: print numbers from 0 to 9
  *
  * Return: 0 (success)
  */
@@ -14,8 +14,7 @@ int main(void)
 
 	while (c <= 57)
 	{
-		putchar(c);
-		c++;
+		putchar(c++);
 	}
 	putchar('\n');
 	return (0);

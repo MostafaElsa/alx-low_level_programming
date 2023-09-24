@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: false or true vailidation
+ * Description: prinf combination of two digits spaced by ", "
  *
  * Return: 0 (success)
  */
@@ -12,7 +12,7 @@ int main(void)
 {
 	int i, j;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 9; i++)
 	{
 		for (j = i + 1; j < 10; j++)
 		{

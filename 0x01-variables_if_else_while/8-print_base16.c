@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: false or true vailidation
+ * Description: print numbers of base 16 lowercase follwed by new line
  *
  * Return: 0 (success)
  */

@@ -12,7 +12,7 @@
  */
 int numLen(int num)
 {
-	int len = 0;
+	int length = 0;
 
 	if (!num)
 		return (1);

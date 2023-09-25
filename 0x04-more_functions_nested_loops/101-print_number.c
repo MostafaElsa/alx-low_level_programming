@@ -17,10 +17,9 @@ void print_number(int n)
 		_putchar('-');
 		n *= -1;
 	}
-	counter = 10;
-	while (counter <= n)
+	counter = 1;
+	while (n / counter >= 10)
 		counter *= 10;
-	counter /= 10;
 	while (counter != 0)
 	{
 		int x = n / counter;

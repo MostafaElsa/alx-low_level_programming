@@ -1,25 +1,24 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - entry point
+ * main -  calculate largest prime of 612852475143
  *
- * Description: whether char is upper or lower case
- *
- * Return: 1 (upper) 0 (lower)
-*/
+ * Return: Success Always
+ */
+
 
 int main(void)
 {
-	int long i;
+	unsigned long int x = 2967119253;
+	unsigned long int py, sum;
 
-	for (i = 782849 ; ; i--)
+	for (py = 2; ; py++)
 	{
-		if (612852475143 % i != 0)
+		if (x % py == 0)
 		{
-			printf("%ld\n", i);
-			break;
+			sum += py;
 		}
 	}
+	printf("%ld\n", py);
 	return (0);
 }

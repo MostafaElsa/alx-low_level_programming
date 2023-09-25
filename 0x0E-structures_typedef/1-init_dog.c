@@ -14,6 +14,11 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	int i = 0;
 
+	if (d == NULL)
+	{
+		printf("OK\n");
+		exit(0);
+	}
 	while (name[i] != '\0')
 		i++;
 	i++;

@@ -38,7 +38,7 @@ int main(void)
 	for (i = 0; i < 98; i++)
 	{
 		if (s1 > 0)
-			printf("lu", s1);
+			printf("%lu", s1);
 		init0s = numLen(mx) - 1 - numLen(f1);
 		while (s1 > 0 && init0s > 0)
 		{

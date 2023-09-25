@@ -12,24 +12,30 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	int i = 0,len = 1;
+	int i = 0;
 
 	while (name[i] != '\0')
-		len++;
-	d->name = malloc(len);
+		i++;
+	i++;
+	d->name = malloc(i);
+	i = 0;
 	while (name[i] != '\0')
 	{
 		(d->name)[i] = name[i];
 		i++;
 	}
+	(d->name)[i] = '\0';
 	i = 0;
 	while (owner[i] != '\0')
-		len++;
-	d->owner = malloc(len);
+		i++;
+	i++;
+	d->owner = malloc(i);
+	i = 0;
 	while (owner[i] != '\0')
 	{
 		(d->owner)[i] = owner[i];
 		i++;
 	}
+	(d->owner)[i] = '\0';
 	d->age = age;
 }

@@ -34,7 +34,9 @@ int numLen(int num)
 int main(void)
 {
 	int i, init0s;
-	unsigned long int f1 = 1L, f2 = 2L, sum1 = 0L, mx = 100000000, s1 = 0L, s2 = 0L, sum2 = 0L;
+	unsigned long int f1 = 1L, f2 = 2L, sum1 = 0L;
+	unsigned long int mx = 100000000, s1 = 0L, s2 = 0L, sum2 = 0L;
+
 	for (i = 0; i < 98; i++)
 	{
 		if (s1 > 0)

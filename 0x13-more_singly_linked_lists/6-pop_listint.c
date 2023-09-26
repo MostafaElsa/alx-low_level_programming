@@ -5,6 +5,7 @@
  * pop_listint - functionn
  *
  * @head: pointer for pointer for head
+ * Return: number in head
  */
 
 int pop_listint(listint_t **head)

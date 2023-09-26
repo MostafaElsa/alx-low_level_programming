@@ -2,13 +2,13 @@
 #include "lists.h"
 
 /**
- * list_len - functionn
+ * listint_len - functionn
  *
  * @h: pointer for head
  * Return: number of nodes
  */
 
-size_t list_len(const list_t *h)
+size_t listint_len(const list_t *h)
 {
 	size_t n = 0;
 

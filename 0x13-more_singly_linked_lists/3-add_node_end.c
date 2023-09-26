@@ -2,28 +2,22 @@
 #include "lists.h"
 
 /**
- * add_node_end - functionn
+ * add_nodeint_end - functionn
  *
  * @head: pointer for pointer for head
- * @str: string to add in new node
+ * @n: number to add in new node
  * Return: address of the element or NULL if failed
  */
 
-list_t *add_node_end(list_t **head, const char *str)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	int i = 0;
-	list_t *new, *temp = *head;
+	listint_t *new, *temp = *head;
 
-	new = malloc(sizeof(list_t));
+	new = malloc(sizeof(listnt_t));
 	if (!new)
 		return (NULL);
-	new->str = strdup(str);
-
-	while (str[i] != '\0')
-		i++;
-
+	new->n = n;
 	new->next = NULL;
-	new->len = i;
 
 	if (!*head)
 	{
